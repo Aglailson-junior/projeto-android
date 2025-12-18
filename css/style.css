@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+:root{
+    --cor1:#8bf9a1;
+    --cor2:#57bc6b;
+    --cor3:#3d804a;
+    --cor4:#344938;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    min-width: 320px;
+    max-width: 1500px;
+    
+}
+
+
+header{
+    background-image:linear-gradient( var(--cor1) 1%,#57bc6b, #344938);
+    min-height: 150px;
+    text-align: left;
+    padding-top: 20px;
+
+}
+header h1{
+    padding-bottom: 20px;
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.584);
+}
+header p{
+    font-size: 21px;
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.584);
+}
+@font-face{
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.menu{
+    font-size: 20px;
+    padding: 5px;
+}
+nav > .menu:hover{
+    background-color: #58b58ac3;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.187);
+    transition-duration: 0.5s;
+    border-radius: 2px;
+}
+.ft{
+    text-align: center;
+}
+   
+.final{
+    height: 400px;
+    width: 500px;
+}
+
+.principal{
+    color: #68e781;
+    font-family: 'android';
+    text-align: center;
+    text-shadow: 3px 1px 1px rgba(0, 0, 0, 0.434);
+
+}
+.topos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    
+    
+}
+p{
+    text-align: justify;
+}
+main{
+    background-color: white;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.251);
+    margin-bottom: 20px;
+}
+main img{
+    width: 100%;
+}
+
+body{
+    background-color: bisque;
+    
+}
+header > h1, p {
+    text-align: center;
+}
+
+a{
+    color: white;
+}
+
+nav{
+    background-color: #344938;
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.171);
+}
+footer{
+    margin: auto;
+    background-color: #113017;
+    color: white;
+}
+.curiosidade{
+    margin: auto;
+    background-color:var(--cor3);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.32);
+}
+.destacado{
+    background-image: linear-gradient(to right,rgb(140, 243, 215),rgba(200, 244, 232, 0.477),rgba(255, 255, 255, 0));
+    font-family: 'android';
+    color: #58b58a;
+}
+.grifado{
+    font-family: 'android';
+    color: #58b58a;
+    background-color: rgb(140, 243, 215);
+}
+div{
+    padding: 20px;
+    background-color: #58b58a;
+    margin: 0px -10px;
+}
+main .imagem{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+aside ul{/*estou falando que quero acessar o ul que esta dentro de uma aside, mais a tag ul pode esta dentro de outras tag funciona so n funciona se colocar o > ai e so usado quando a tag realmente esta dentro apenas dela */
+    list-style-position: inside;
+    text-decoration: underline;
+    columns: 2;
+    list-style-type: '\2705\00a0';
+}
+aside{
+    padding: 10px;
+}
+p{
+    text-align: justify;
+    margin: 15px 0px;
+    text-indent: 20px;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+h3{
+    background-color: var(--cor4);
+    padding: 4px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.505);
+}
+
+/*posso usar strong para destavar uma palavra como importante*/
+
+
+/*posso usar tipo 
+h1::before{
+content: algum simbolo ou algo que eu queira colocar antes do h1.
+
+h1::after{
+content: algum simbolo ou algo que eu queira colocar depois do h1.
+*/
